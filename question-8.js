@@ -6,8 +6,10 @@ async function fetchUserList() {
   const newUserList = data.map((user) => user.name);
   return newUserList;
 }
-const result = await fetchUserList();
-console.log(result);
-
+async function main() {
+  const result = await fetchUserList();
+  console.log(result);
+}
+main();
 // ใช้ fetch เพื่อดึงข้อมูลจาก API และใช้ .json() เพื่อแปลงข้อมูลเป็น JavaScript Object
 // จากนั้นใช้ .map() เพื่อสร้าง Array ใหม่ที่มีเฉพาะชื่อของผู้ใช้ (name) โดยการเข้าถึง property name ของแต่ละ user ใน data
