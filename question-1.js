@@ -5,4 +5,6 @@ const inventory = {
   banana: { price: 10, quantity: 50 },
 };
 
-// เริ่มเขียนโค้ดตรงนี้
+inventory.apple.price = 30; // Update the price of apple
+inventory.orange = { price: 20, quantity: 300 }; // Add a new item orange to the inventory
+console.log(inventory);
