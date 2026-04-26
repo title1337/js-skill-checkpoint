@@ -1,15 +1,19 @@
 // Question 5: Calculating Total Price in User's Cart
 
-function calculateTotalPrice() {
-  // เริ่มเขียนโค้ดตรงนี้
+function calculateTotalPrice(cart) {
+  let totalPrice = 0; // ตัวแปรสำหรับเก็บผลรวมของราคาทั้งหมดใน cart
+  for (let item of cart) {
+    totalPrice += item.price * item.quantity; //สะสมค่า price × quantity ของแต่ละ item ใน cart
+  }
+  return totalPrice;
 }
 
 // ตัวอย่างการใช้งาน
 
 const cart = [
-  { name: "apple", price: 10, quantity: 2 },
-  { name: "banana", price: 15, quantity: 1 },
-  { name: "orange", price: 5, quantity: 3 },
+  { name: 'apple', price: 10, quantity: 2 },
+  { name: 'banana', price: 15, quantity: 1 },
+  { name: 'orange', price: 5, quantity: 3 },
 ];
 
 console.log(calculateTotalPrice(cart)); // ผลลัพธ์จากการ Execute ตัว Function จะต้องได้: 50
