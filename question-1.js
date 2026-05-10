@@ -5,7 +5,7 @@ const inventory = {
   banana: { price: 10, quantity: 50 },
 };
 
-inventory.apple.price = 30; // Update the price of apple
+inventory.apple.quantity = 100; // Update the quantity of apple
 inventory.orange = { price: 20, quantity: 300 }; // Add a new item orange to the inventory\
 
 let totalValue = 0;
