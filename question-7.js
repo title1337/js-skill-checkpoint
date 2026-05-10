@@ -15,10 +15,7 @@ function mergeProductLists(list1, list2) {
 }
 // ใช้ Spread Operator (...) เพื่อรวม Array list1 และ list2 เข้าด้วยกัน
 // ตัวอย่างการใช้งาน
-const mergedProductList = mergeProductLists(
-  firstProductList,
-  secondProductList,
-);
-console.log(mergedProductList);
+const newProductList = mergeProductLists(firstProductList, secondProductList);
+console.log(newProductList);
 
 // อาจจะใช้ for...of + .push() ได้???
